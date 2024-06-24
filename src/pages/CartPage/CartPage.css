@@ -4,6 +4,12 @@
     box-shadow: 0px 0px 0px 0px #E4E7ED, 0px 0px 0px 1px #E4E7ED;
 }
 
+.cart-section .cart-products .product {
+    border-bottom: 1px solid #E4E7ED;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
 .cart-section .product-img img {
     width: 80px;
     height: 80px;
@@ -12,12 +18,11 @@
 
 .cart-section .product-name {
     font-weight: 600;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .cart-section .product-price {
     font-weight: 600;
-    font-size: 18px;
 }
 
 .cart-section .product-remove button {
@@ -50,4 +55,12 @@
 
 .cart-section .product-total .inner-part h2 {
     font-size: 18px;
+}
+
+@media(max-width: 768px) {
+
+    .cart-section .cart-products .product .col-lg-2,
+    .col-lg-4 {
+        margin-bottom: 1rem;
+    }
 }

@@ -16,10 +16,9 @@ function App() {
         <Route path="/cart" element={<CartPage />} />
       </Routes>
       <ToastContainer
-        position="top-right"
+        position="bottom-right"
         autoClose={5000}
         hideProgressBar={false}
-        newestOnTop={false}
         closeOnClick
         rtl={false}
         pauseOnFocusLoss

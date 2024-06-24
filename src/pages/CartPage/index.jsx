@@ -59,34 +59,36 @@ const CartPage = () => {
         <div className='cart-products'>
           {cartData?.map((item) => {
             return (
-              <div className='row align-items-center mb-4'>
-                <div className='col-lg-2'>
-                  <div className='product-img'>
-                    <img src={item.image} />
+              <div className='product'>
+                <div className='row align-items-center'>
+                  <div className='col-lg-2'>
+                    <div className='product-img'>
+                      <img src={item.image} />
+                    </div>
                   </div>
-                </div>
-                <div className='col-lg-4'>
-                  <div className='product-name'>{item.title}</div>
-                </div>
-                <div className='col-lg-2'>
-                  <div className='product-qty'>
-                    <input type='number' min={0} max={10} value={item.quantity}
-                      onChange={(e) => handleQuantityChange(item.id, e)}
-                    />
+                  <div className='col-lg-4'>
+                    <div className='product-name'>{item.title}</div>
                   </div>
-                </div>
-                <div className='col-lg-2'>
-                  <div className='product-price'>
-                    <span>{item.quantity}</span>&nbsp;
-                    <span>X</span>&nbsp;
-                    ${item.price}
+                  <div className='col-lg-2'>
+                    <div className='product-qty'>
+                      <input type='number' min={0} max={10} value={item.quantity}
+                        onChange={(e) => handleQuantityChange(item.id, e)}
+                      />
+                    </div>
                   </div>
-                </div>
-                <div className='col-lg-2'>
-                  <div className='product-remove'>
-                    <button type='button' className='btn btn-danger btn-sm' onClick={() => handleDeleteCart(item.id)}>
-                      Delete
-                    </button>
+                  <div className='col-lg-2'>
+                    <div className='product-price'>
+                      <span>{item.quantity}</span>&nbsp;
+                      <span>X</span>&nbsp;
+                      ${item.price}
+                    </div>
+                  </div>
+                  <div className='col-lg-2'>
+                    <div className='product-remove'>
+                      <button type='button' className='btn btn-danger btn-sm' onClick={() => handleDeleteCart(item.id)}>
+                        Delete
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>

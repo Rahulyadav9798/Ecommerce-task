@@ -1,9 +1,14 @@
 .navbar-toggler {
     border: 1px solid #fff;
 }
+
 .navbar {
     background-color: var(--black);
     border-bottom: 4px solid var(--red);
+}
+
+.navbar-toggler-icon {
+    filter: invert(0.5) sepia(1) saturate(0) hue-rotate(180deg);
 }
 
 .navbar .navbar-brand {
@@ -15,7 +20,8 @@
 .navbar-nav .nav-link {
     color: var(--white);
 }
-.navbar .nav-link .count{
+
+.navbar .nav-link .count {
     padding: 0 4px;
     background: var(--red);
     position: relative;
