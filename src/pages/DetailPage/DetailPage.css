@@ -1,0 +1,113 @@
+.detail-section .product-img {
+    margin: auto;
+    max-width: 280px;
+}
+
+.detail-section .product-img img {
+    width: 100%;
+}
+
+.detail-section .product-details .product-name {
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.detail-section .product-details .product-rating {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.detail-section .product-details .product-rating>i {
+    color: #E4E7ED;
+}
+
+.detail-section .product-details .product-rating>i.fa-star {
+    color: var(--red);
+}
+
+.detail-section .product-details .product-price {
+    display: inline-block;
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--red);
+}
+
+.detail-section .product-details .product-price .product-old-price {
+    font-size: 70%;
+    font-weight: 400;
+    color: #8D99AE;
+}
+
+.detail-section .product-details .product-options {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.detail-section .product-details .product-options label {
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.detail-section .product-details .product-options .input-select {
+    width: 90px;
+}
+
+.detail-section .product-details .add-to-cart {
+    margin-bottom: 30px;
+}
+
+.detail-section .product-details .add-to-cart .add-to-cart-btn {
+    position: relative;
+    border: 2px solid transparent;
+    height: 40px;
+    padding: 0 30px;
+    background-color: var(--red);
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.detail-section .product-details .add-to-cart .add-to-cart-btn>i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    color: var(--red);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.detail-section .product-details .add-to-cart .add-to-cart-btn:hover {
+    background-color: #FFF;
+    color: var(--red);
+    border-color: var(--red);
+    padding: 0px 30px 0px 50px;
+}
+
+.detail-section .product-details .add-to-cart .add-to-cart-btn:hover>i {
+    opacity: 1;
+    visibility: visible;
+}
+
+.detail-section .product-details .add-to-cart .qty-label {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.detail-section .product-details .add-to-cart .qty-label .input-number {
+    width: 90px;
+    display: inline-block;
+}

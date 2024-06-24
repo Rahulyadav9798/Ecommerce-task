@@ -1,0 +1,24 @@
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+.navbar {
+    background-color: var(--black);
+    border-bottom: 4px solid var(--red);
+}
+
+.navbar .navbar-brand {
+    font-size: 30px;
+    color: var(--white);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link {
+    color: var(--white);
+}
+.navbar .nav-link .count{
+    padding: 0 4px;
+    background: var(--red);
+    position: relative;
+    top: -10px;
+    border-radius: 4px;
+}
